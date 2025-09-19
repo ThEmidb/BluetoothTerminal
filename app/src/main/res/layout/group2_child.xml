@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/group2Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="0dp"
+        android:text="Scan"/>
+
+    <TextView
+        android:id="@+id/foundNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:visibility="gone"
+        android:layout_alignTop="@id/group2Button"
+        android:layout_marginRight="8dp"/>
+
+    <ListView
+        android:id="@+id/group2ListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_marginBottom="0dp"
+        android:nestedScrollingEnabled="true"
+        android:overScrollMode="never"/>
+
+    <TextView
+        android:id="@+id/group2EmptyText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No devices found"
+        android:gravity="center"
+        android:padding="12dp"
+        android:visibility="gone"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@android:color/darker_gray"/>
+</LinearLayout>
